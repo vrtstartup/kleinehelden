@@ -1,0 +1,32 @@
+<md-content flex layout-padding>
+    <div layout="row" layout-align="center center">
+        <div flex="50">
+            <md-input-container class="md-block">
+                <label>Stel een vraag:</label>
+                <md-select ng-model="select" ng-change="addFilter(select)">
+                    <md-option ng-repeat="(key, option) in options" ng-if="!option.inFilter" value="{{key}}">
+                        {{option.text}}
+                    </md-option>
+                </md-select>
+            </md-input-container>
+        </div>
+        <!--  <div flex>
+            <md-button class="md-raised md-primary" ng-click="addFilter(select)">Stel deze vraag</md-button>
+        </div> -->
+    </div>
+    <div layout="row" layout-align="center center">
+        <div flex="50">
+            <md-list-item ng-repeat="(key, option) in options" ng-if="option.inFilter">
+                <p> {{ option.text }} </p>
+                <div class="md-secondary" ng-click="removeFilter(key)">X</div>
+                <!-- <md-checkbox class="md-secondary" ng-model="topping.wanted"></md-checkbox> -->
+            </md-list-item>
+        </div>
+    </div>
+    <div layout="row" layout-align="center center">
+        <div flex="50">
+            <div ng-if="numberAways == 15">Niemand beantwoordt aan deze omschrijving!</div>
+        </div>
+    </div>
+    <kh-cards heroes="cards"></kh-cards>
+</md-content>

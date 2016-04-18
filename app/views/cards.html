@@ -1,0 +1,12 @@
+<div layout-wrap layout="row" layout-align="center center" style="padding-left:10%;padding-right:10%;">
+    <div flex="20" flex-xs="50" flex-sm="33" ng-repeat="card in heroes" class="cards" ng-class="{ 'away': card.away}">
+        <flippy flip="['mouseenter']" flip-back="['mouseleave']" duration="800" timing-function="ease-in-out" style="height:{{height}}px">
+            <flippy-front>
+                <img src="{{card.pictureFront}}" class="theImage">
+            </flippy-front>
+            <flippy-back>
+                <img src="{{card.pictureBack}}">
+            </flippy-back>
+        </flippy>
+    </div>
+</div>
