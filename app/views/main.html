@@ -1,6 +1,6 @@
 <md-content flex layout-padding>
     <div layout="row" layout-align="center center">
-        <div flex="50">
+        <div flex="50" flex-sm="80" flex-xs="100">
             <md-input-container class="md-block">
                 <label>Stel een vraag:</label>
                 <md-select ng-model="select" ng-change="addFilter(select)">
@@ -15,17 +15,17 @@
         </div> -->
     </div>
     <div layout="row" layout-align="center center">
-        <div flex="50">
+        <md-list class="answers" flex="50" flex-sm="80" flex-xs="100">
             <md-list-item ng-repeat="(key, option) in options" ng-if="option.inFilter">
-                <p> {{ option.text }} </p>
+                <p>{{ option.text }}</p>
                 <div class="md-secondary" ng-click="removeFilter(key)">X</div>
                 <!-- <md-checkbox class="md-secondary" ng-model="topping.wanted"></md-checkbox> -->
             </md-list-item>
-        </div>
+        </md-list>
     </div>
     <div layout="row" layout-align="center center">
-        <div flex="50">
-            <div ng-if="numberAways == 15">Niemand beantwoordt aan deze omschrijving!</div>
+        <div  flex="50" flex-sm="80" flex-xs="100">
+            <div ng-if="numberAways == 15" class="nobody">Niemand beantwoordt aan deze omschrijving!</div>
         </div>
     </div>
     <kh-cards heroes="cards"></kh-cards>

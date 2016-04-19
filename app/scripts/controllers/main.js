@@ -34,7 +34,7 @@ angular.module('kleineHeldenApp')
             }, {
                 pictureFront: 'images/Filip F.png',
                 pictureBack: 'images/Filip.png',
-                tags: ['man', 'reportagereis', 'buitenland'],
+                tags: ['man', 'reportagereis', 'buitenland', 'filmenBuitenland'],
                 away: false
             }, {
                 pictureFront: 'images/David F.png',
@@ -74,7 +74,7 @@ angular.module('kleineHeldenApp')
             }, {
                 pictureFront: 'images/Ina F.png',
                 pictureBack: 'images/Ina.png',
-                tags: ['vrouw', 'voorbereiden', 'postproductie'],
+                tags: ['vrouw', 'voorbereiden', 'postproductie', 'eindredacteur'],
                 away: false
             }, {
                 pictureFront: 'images/Jan B F.png',
@@ -84,7 +84,7 @@ angular.module('kleineHeldenApp')
             }, {
                 pictureFront: 'images/Joris F.png',
                 pictureBack: 'images/Joris.png',
-                tags: ['man', 'postproductie', 'baard', 'reportagereis', 'buitenland', 'regisseur'],
+                tags: ['man', 'postproductie', 'baard', 'reportagereis', 'hoofddeksel', 'regisseur', 'filmenBuitenland', 'montage'],
                 away: false
             }
 
